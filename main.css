@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+:root {
+    font-family: 'Raleway', sans-serif;
+    --text-color: #000000;
+    --main-color: #84C6F5;
+}
+
+.main-conteiner {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    margin: 40px 0px 40px 0;
+    padding: 50px;
+    background: linear-gradient(to bottom, var(--main-color), #FFffff);
+    border-radius: 50px;
+}
+
+.welcome-conteiner {
+    border: solid 2px black;
+}
+
+.welcome-conteiner h1 {
+    margin: 40px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    position: relative;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-conteiner h1::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 10%;
+    transform: translateX(-50%);
+    width: 10%;
+    height: 3px;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.welcome-conteiner p {
+    margin: 40px;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    border: solid 2px black;
+    width: 100%;
+    height: 440px;
+    gap: 25px;
+}
+
+.redes-sociais img{
+    width: 7vw;
+    height: 14vh;
+    border-radius: 50%; 
+    object-fit: cover;
+}
+
+.redes-sociais ul {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.preto:hover {
+    color: rgba(0, 0, 0, 0.837);
+    transform: scale(1.3);
+}
+
+.roxo:hover {
+    color: rgba(202, 19, 230, 0.837);
+    transform: scale(1.3);
+}
+
+.azul:hover {
+    color: rgb(55, 94, 250);
+    transform: scale(1.3);
+}
+
+@media (max-width: 900px) {
+    .main-conteiner {
+        grid-template-columns: 1fr;
+        align-items: center;
+        padding: 0;
+    }
+
+
+    .welcome-container {
+        width: 100%;
+        border: none; 
+    }
+
+    .welcome-container h1 {
+        margin: 2vw; 
+        font-size: 2rem;
+    }
+
+    .welcome-conteiner h1::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 30%;
+        transform: translateX(-50%);
+        width: 20%;
+        height: 3px;
+        background-color: black;
+        border-radius: 20px;
+    }
+
+    .welcome-container p {
+        margin: 2vw; 
+        font-size: 1rem;
+    }
+
+    .redes-sociais img{
+        width: 30vw;
+        height: 15vh;
+        border-radius: 50%; 
+        object-fit: cover;
+    }
+
+    .preto {
+        color: rgba(0, 0, 0, 0.837);
+    }
+    
+    .roxo {
+        color: rgba(202, 19, 230, 0.837);
+    }
+    
+    .azul {
+        color: rgb(55, 94, 250);
+    }
+
+    .preto:hover {
+        transform: scale(1.3);
+    }
+
+    .roxo:hover {
+        transform: scale(1.3);
+    }
+
+    .azul:hover {
+        transform: scale(1.3);
+    }
+}
