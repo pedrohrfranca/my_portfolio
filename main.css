@@ -81,15 +81,22 @@
     cursor: pointer;
 }
 
+.preto, .roxo, .azul {
+    color: rgba(0, 0, 0, 0.837);
+}
+
 .preto:hover {
     color: rgba(0, 0, 0, 0.837);
     transform: scale(1.3);
 }
 
+
 .roxo:hover {
     color: rgba(202, 19, 230, 0.837);
     transform: scale(1.3);
 }
+
+
 
 .azul:hover {
     color: rgb(55, 94, 250);
