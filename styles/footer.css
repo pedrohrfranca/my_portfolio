@@ -17,6 +17,13 @@
     background: linear-gradient(to top, var(--main-color), #FFffff);
     border-radius: 50px;
     text-align: center;
+    border-radius: 50px;
+    transition: 0.5s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.footer:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .footer h1 {
@@ -36,6 +43,13 @@
     line-height: 1.5;
     margin-top: 20px;
     max-width: 50vw;
+}
+
+.contatos-pedro a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #0077FF; /* Cor do link */
+    font-weight: bold; /* Define a fonte em negrito */
+    margin-right: 10px; /* Adiciona um espaço à direita dos links para separação */
 }
 
 .contatos-pedro p{

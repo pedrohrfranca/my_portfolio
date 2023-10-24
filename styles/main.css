@@ -19,7 +19,14 @@
     padding: 50px;
     background: linear-gradient(to bottom, var(--main-color), #FFffff);
     border-radius: 50px;
+    transition: 0.5s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
+.main-conteiner:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
 
 .welcome-conteiner {
     letter-spacing: 2px;
@@ -31,7 +38,14 @@
     font-size: 2.5rem;
     font-weight: 600;
     position: relative;
-    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+    text-shadow: 4px 4px 6px var(--shadow-color);
+    transition: transform 0.3s ease-in-out, color 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.welcome-conteiner h1:hover {
+    transform: scale(0.9);
+    color: #FFffff;
 }
 
 .welcome-conteiner h1::after {
@@ -64,12 +78,33 @@
     gap: 25px;
 }
 
-.redes-sociais img{
+.redes-sociais img {
     width: 7vw;
     height: 14vh;
-    border-radius: 50%; 
+    border-radius: 50%;
     object-fit: cover;
+    transition: transform 0.5s ease-in-out; 
 }
+
+.redes-sociais img:hover {
+    transform: scale(1.2); 
+}
+
+.redes-sociais::after {
+    content: "Pedro França - Web Developer Jr"; 
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 10px;
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out; 
+}
+
+.redes-sociais:hover::after {
+    opacity: 1; 
+}
+
+
 
 .redes-sociais ul {
     display: flex;
